@@ -10,9 +10,9 @@ describe SchoolReport do
       expect(subject.format("Green, Green")).to eq "Green: 2"
     end
 
-    it 'should return the correct score for green and amber when given green once and amber once' do
-      expect(subject.format("Green, Amber")).to eq "Green: 1\nAmber: 1"
-    end
+    # it 'should return the correct score for green and amber when given green once and amber once' do
+    #   expect(subject.format("Green, Amber")).to eq "Green: 1\nAmber: 1"
+    # end
 
     it 'should return the correct score for green amber and red when given one green one amber and one red' do
       expect(subject.format("Green, Amber, Red")).to eq "Green: 1\nAmber: 1\nRed: 1"
